@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from '../Layout/Footer'
 
 export default function Login() {
   return (
+    <>
     <div className='min-h-screen flex items-center bg-gray-200'>
       <div className='w-[800px] h-[450px] bg-white shadow-lg flex rounded-lg overflow-hidden'>
         {/* Left panel */}
@@ -52,7 +54,10 @@ export default function Login() {
         
       </div>
     </div>
-    
+    <Footer/>
+
+    </>
 
   )
 }
+
