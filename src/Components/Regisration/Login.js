@@ -3,9 +3,8 @@ import Footer from '../Layout/Footer'
 
 export default function Login() {
   return (
-    <>
-    <div className='min-h-screen flex items-center bg-gray-200'>
-      <div className='w-[800px] h-[450px] bg-white shadow-lg flex rounded-lg overflow-hidden'>
+    <><div className='min-h-screen flex items-center justify-center bg-gray-200'>
+       <div className='w-[800px] h-[450px] bg-white shadow-lg flex rounded-lg overflow-hidden justify-center'>
         {/* Left panel */}
         <div className='bg-blue-900 w-1/2 text-white p-8 flex flex-col justify-center '>
         <h1 className='text-2xl font-bold mb-4'>Simplify</h1>
@@ -48,6 +47,18 @@ export default function Login() {
          type='submit'
          id='submit'
          className='bg-blue-500 w-full  text-white py-2 rounded mb-3'>Login</button>
+         <div className="text-center text-sm text-gray-500 mb-3">or log with</div>
+
+          <div className="flex justify-center gap-4">
+            <button className="flex items-center gap-2 border px-3 py-1 rounded">
+              <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google" />
+              google
+            </button>
+            <button className="flex items-center gap-2 border px-3 py-1 rounded">
+              <img src="https://img.icons8.com/color/16/000000/facebook-new.png" alt="Facebook" />
+              facebook
+            </button>
+          </div>
 
          </div>
          
