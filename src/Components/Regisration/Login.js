@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from '../Layout/Footer'
 
 export default function Login() {
   return (
+    <>
     <div className='min-h-screen flex items-center bg-gray-200'>
       <div className='w-[800px] h-[450px] bg-white shadow-lg flex rounded-lg overflow-hidden'>
         {/* Left panel */}
@@ -45,14 +47,17 @@ export default function Login() {
          <button
          type='submit'
          id='submit'
-         className='bg-blue-500 w-full bg-black text-white py-2 rounded mb-3'>Login</button>
+         className='bg-blue-500 w-full  text-white py-2 rounded mb-3'>Login</button>
 
          </div>
          
         
       </div>
     </div>
-    
+    <Footer/>
+
+    </>
 
   )
 }
+
