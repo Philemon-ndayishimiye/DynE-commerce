@@ -45,7 +45,7 @@ export default function Login() {
          <button
          type='submit'
          id='submit'
-         className='bg-blue-500'>Login</button>
+         className='bg-blue-500 w-full bg-black text-white py-2 rounded mb-3'>Login</button>
 
          </div>
          
