@@ -26,7 +26,7 @@ export default function Header() {
 
         <div className='w-[500px] bg-white h-[367px] py-10 absolute top-[60px] rounded-l-[50%] right-0'>
             <div>
-                <h1>this is the images section</h1>
+                <h1></h1>
             </div>
         </div>
     </div>
