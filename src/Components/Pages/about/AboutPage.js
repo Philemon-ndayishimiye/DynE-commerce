@@ -13,7 +13,7 @@ export default function AboutPage() {
 
         <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 max-md:justify-center max-sm:max-w-xs mx-auto mt-12">
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-1.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-1.webp" alt='image1'  class="w-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">John Doe</h4>
@@ -49,7 +49,7 @@ export default function AboutPage() {
           </div>
 
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-2.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-2.webp" alt='image2' class="w-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">Mark Adair</h4>
@@ -87,7 +87,7 @@ export default function AboutPage() {
           
 
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-4.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-4.webp" alt='image3' class="w-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">Sophia</h4>
@@ -123,7 +123,7 @@ export default function AboutPage() {
           </div>
 
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-2.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-2.webp" alt='image4' class="w-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">John Doe</h4>
