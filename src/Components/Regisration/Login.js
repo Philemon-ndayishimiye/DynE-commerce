@@ -1,9 +1,11 @@
 import React from 'react'
 import Footer from '../Layout/Footer'
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
-    <><div className='min-h-screen flex items-center justify-center bg-gray-200'>
+    <>
+     <div className='min-h-screen flex items-center justify-center bg-gray-200'>
        <div className='w-[800px] h-[450px] bg-white shadow-lg flex rounded-lg overflow-hidden justify-center'>
         {/* Left panel */}
         <div className='bg-blue-900 w-1/2 text-white p-8 flex flex-col justify-center '>
@@ -14,7 +16,7 @@ export default function Login() {
        </div>
        {/*right panel */}
        <div className='w-1/2 p-8'>
-         <div className='flex items-center' gap-2 mb-4>
+         <div className='flex items-center gap-2 mb-4 '>
           <div className='w-8 h-8 rounded-full bg-orange-500 text-white font-bold flex items-center justify-center'>
           E
           </div>
@@ -58,7 +60,13 @@ export default function Login() {
               <img src="https://img.icons8.com/color/16/000000/facebook-new.png" alt="Facebook" />
               facebook
             </button>
+            
           </div>
+          <div>
+            <p>
+            Don't have an account? <Link to="/register">Sign up</Link>
+           </p>
+             </div>
 
          </div>
          
