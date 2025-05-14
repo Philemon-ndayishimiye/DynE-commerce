@@ -2,11 +2,15 @@
 import React from 'react'
 import { FaSearch } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function Body() {
   return (
 
-    <div className='bg-[#0B4F74] py-6'>
+    <>
+
+    <div className=' hidden md:block bg-[#0B4F74] py-6'>
 
        
         <div className='py-3'>
@@ -177,7 +181,7 @@ export default function Body() {
 
                     </div>   
 
-                    <div className='flex flex-col bg-white rounded-lg h-[370px]'>
+                    <div className='flex flex-col bg-white rounded-lg h-[370px] static'>
 
                          <div className='w-[85%] ml-[26px] rounded-md mt-4'>
                               <img  className='rounded-lg w-[300px]' src='/electronics/image1.jpg' alt='image1'/> 
@@ -217,5 +221,218 @@ export default function Body() {
         </div>
 
     </div>
+
+
+
+{/* visible for mobile device*/}
+
+
+
+    <div className=' block sm:hidden bg-[#0B4F74] py-2'>
+
+       
+        <div className='py-2'>
+
+            <h2 className='text-xl text-white font-bold text-center '>
+                Gift Dollars for the  Selected Sellers</h2>
+ 
+        </div>
+
+        
+
+        <div className='flex ml-[10px] h-[40px] mt-4 '>
+
+            <div className='w-[90px] bg-[#C4C3C3] font-bold text-black py-1 px-1 flex '>
+
+                <h2 className=''>products</h2>
+                <div className='mt-1 ml-1 cursor-pointer'><FaCaretDown/> </div>
+            </div>
+
+            <div className='bg-white flex w-[150px]'>
+                <div className='ml-3 mt-2 text-xl mr-3 cursor-pointer'> <FaSearch/></div>
+                <input type='text' className='focus:outline-none focus:ring-0 focus:border-transparent'/>
+            </div>
+            <div className='w-[80px] bg-red-500'> 
+                <button className='w-[100%] py-2 px-2 font-bold text-white text-xl'>Search</button>
+            </div>
+
+            
+        </div>
+
+        <div className='mt-10 flex justify-between py-4 px-1'>
+
+            <div className='text-white font-bold text-4xl cursor-pointer'><FaChevronLeft/> </div>
+
+            <div className='bg-[#61979A] rounded-[20px]'> <button className='w-full py-2 px-4 font-medium text-white'>Electronics</button> </div>
+
+            <div className='bg-white rounded-[20px]'> <button className='w-full py-2 px-4 font-medium'>Electronics</button> </div>
+
+            <div className='text-white font-bold text-4xl cursor-pointer'><FaChevronRight/> </div>
+
+            
+            
+            
+        </div>
+
+        <div className='mt-6 py-2 '>
+
+            <div className='mb-[80px]'>
+                <h1 className='text-center font-bold text-3xl text-white '>Electronic Devices</h1>
+            </div>
+
+            <div className=' ml-[100px] mr-[100px]'>
+
+                <div className='grid grid-cols-1 gap-y-[50px]'>
+
+                    <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+
+                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image1.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
+                             <div className='px-1 py-1 text-white'>ico</div>
+
+                           <div className=' '> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div>    
+
+                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+
+                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image3.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
+                             <div className='px-1 py-1 text-white'>ico</div>
+
+                           <div className=' '> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div>   
+
+                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+
+                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image6.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
+                             <div className='px-1 py-1 text-white'>ico</div>
+
+                           <div className=' '> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div>  
+
+                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+
+                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image1.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
+                             <div className='px-1 py-1 text-white'>ico</div>
+
+                           <div className=' '> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div>    
+
+                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+
+                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image3.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
+                             <div className='px-1 py-1 text-white'>ico</div>
+
+                           <div className=' '> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div>  
+
+                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+
+                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image6.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[125px] mb-3 ml-[1px]'>
+                             <div className='px-1 py-1 text-white'>ico</div>
+
+                           <div className=' '> 
+                              <button className='px-2 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div>         
+
+                       
+
+                     
+
+                       
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </>
   )
 }
