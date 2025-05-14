@@ -1,7 +1,12 @@
 import React from 'react'
+import AdmSidbar from './AdmSidbar'
 
-export default function AdminPortal() {
+ function AdminPortal() {
   return (
-    <div>AdminPortal</div>
+    <div>
+      <AdmSidbar/>
+    </div>
   )
 }
+
+export default AdminPortal
