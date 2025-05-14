@@ -1,9 +1,12 @@
 import React from 'react'
-
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import OurStory from './OurStory';
 export default function AboutPage() {
   return (
     
-    <div>
+    <>
+    <OurStory/>
       <div class="p-4">
       <div class="lg:max-w-5xl md:max-w-3xl max-w-xl mx-auto">
         <div class="max-w-2xl mx-auto text-center">
@@ -13,20 +16,16 @@ export default function AboutPage() {
 
         <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 max-md:justify-center max-sm:max-w-xs mx-auto mt-12">
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-1.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-1.webp" alt="john" class="w-24 h-24 rounded-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">John Doe</h4>
-              <p class="text-slate-600 text-xs mt-1">Software Engineer</p>
+              <p class="text-slate-600 text-xs mt-1">Team Director</p>
 
               <div class="space-x-4 mt-4">
                 <button type="button"
-                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 155.139 155.139">
-                    <path
-                      d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
-                      data-original="#010002" />
-                  </svg>
+                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none ">
+                  <FaXTwitter />
                 </button>
                 <button type="button"
                   class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4]">
@@ -49,20 +48,16 @@ export default function AboutPage() {
           </div>
 
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-2.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-2.webp" alt="John Doe" class="w-24 h-24  rounded-full object-cover object-top border-2 border-gray-200 shadow" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">Mark Adair</h4>
-              <p class="text-slate-600 text-xs mt-1">Software Engineer</p>
+              <p class="text-slate-600 text-xs mt-1">Project manager</p>
 
               <div class="space-x-4 mt-4">
                 <button type="button"
-                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 155.139 155.139">
-                    <path
-                      d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
-                      data-original="#010002" />
-                  </svg>
+                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none ">
+                  <FaXTwitter />
                 </button>
                 <button type="button"
                   class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4]">
@@ -87,20 +82,16 @@ export default function AboutPage() {
           
 
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-4.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-4.webp" alt="John Doe" class="w-24 h-24 rounded-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">Sophia</h4>
-              <p class="text-slate-600 text-xs mt-1">Software Developer</p>
+              <p class="text-slate-600 text-xs mt-1">Product manager</p>
 
               <div class="space-x-4 mt-4">
                 <button type="button"
-                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 155.139 155.139">
-                    <path
-                      d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
-                      data-original="#010002" />
-                  </svg>
+                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none ">
+                  <FaXTwitter />
                 </button>
                 <button type="button"
                   class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4]">
@@ -123,20 +114,16 @@ export default function AboutPage() {
           </div>
 
           <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-2.webp" class="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-2.webp" class="w-24 h-24 rounded-full object-cover object-top aspect-square" />
 
             <div class="p-4">
               <h4 class="text-slate-900 text-[15px] font-semibold">John Doe</h4>
-              <p class="text-slate-600 text-xs mt-1">Software Developer</p>
+              <p class="text-slate-600 text-xs mt-1">Customer Service</p>
 
               <div class="space-x-4 mt-4">
                 <button type="button"
-                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 155.139 155.139">
-                    <path
-                      d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
-                      data-original="#010002" />
-                  </svg>
+                  class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none ">
+                  <FaXTwitter />
                 </button>
                 <button type="button"
                   class="w-6 h-6 inline-flex items-center justify-center cursor-pointer rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4]">
@@ -160,7 +147,7 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
-    </div>
+    </>
   
   )
 }
