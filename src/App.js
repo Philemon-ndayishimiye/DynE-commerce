@@ -7,6 +7,7 @@ import AboutPage from './Components/Pages/AboutPage'
 import Login from './Components/Regisration/Login'
 import SignUp from './Components/Regisration/SignUp'
 import SellerSidebar from "./Components/Seller/sellerSidebar";
+import AdminPortal from "./Components/Admin/AdminPortal"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/register" element={<SignUp/>}></Route>
        <Route path="/seller" element={<SellerSidebar/>}></Route>
+        <Route path="/admin" element={<AdminPortal/>}></Route>
   
        
 
