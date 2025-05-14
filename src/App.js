@@ -1,9 +1,9 @@
 
 import { Route, Routes } from "react-router-dom";
 import Nav from "./Components/Layout/Nav";
-import LandingPage from './Components/Pages/LandingPage'
-import ContactPage from './Components/Pages/ContactPage'
-import AboutPage from './Components/Pages/AboutPage'
+import LandingPage from './Components/Pages/landing/LandingPage'
+import ContactPage from './Components/Pages/contact/ContactPage'
+import AboutPage from './Components/Pages/about/AboutPage'
 import Login from './Components/Regisration/Login'
 import SignUp from './Components/Regisration/SignUp'
 import SellerSidebar from "./Components/Seller/sellerSidebar";
