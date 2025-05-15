@@ -4,7 +4,12 @@ export default function Header() {
 
   return (
 
-    <div style={{backgroundImage: "url('/background.jpg')"}} className=' bg-cover bg-center justify-between'>
+    <>
+
+    <div style={{backgroundImage: "url('/background.jpg')"}}
+
+     className=' hidden md:block  bg-cover bg-center justify-between '>
+
 
       <div className='flex justify-between py-[50px]'>
 
@@ -30,5 +35,41 @@ export default function Header() {
             </div>
         </div>
     </div>
+
+    {/* visible only on mobile phone */}
+
+    <div style={{backgroundImage: "url('/background.jpg')"}} className='block sm:hidden  bg-cover bg-center justify-between'>
+
+         <div className='flex justify-between py-[10px]'>
+
+             <div className='ml-[2%]'>
+    
+                <h2 className='text-white font-bold text-xl'>Raining Offers For</h2>
+                <h2 className='text-white font-bold text-xl py-2'>Hot Summer!</h2>
+                <h5 className='text-white font-medium text-xs py-4'>25% Off On All Products</h5>
+    
+              <div className='w-[200px] flex justify-between py-2'>
+    
+                    <button className='border-1 bg-white px-1 py-1 font-medium'>SHOP NOW</button>
+                    <button className='border-1 bg-[#72A7CD] px-1 py-1 text-white font-medium'>FIND MORE</button>
+              </div>
+    
+            </div>
+
+      </div>
+
+      {/*  <div className='w-[130px] bg-white h-[150px] py-10 absolute top-[60px] rounded-l-[50%] right-0'>
+            <div>
+                <h1> image slider</h1>
+            </div>
+        </div>
+
+        */} 
+
+       
+   </div>
+    
+
+    </>
   )
 }
