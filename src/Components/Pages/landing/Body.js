@@ -1,11 +1,36 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { FaSearch } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import { motion } from 'framer-motion'
+  
+  export default function Body(){
 
-export default function Body() {
+  
+    const Categories = [
+        'Electronic', 'Accessories', 'Home & Living', 'Sports Equipments',
+        'Toys and Games', 'Tools & Hardware', 'Kitchen Tools'
+    ];
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const PrevCategory = () => {
+        setCurrentIndex((prev) => (prev - 1 + Categories.length) % Categories.length);
+    };
+
+    const NextCategory = () => {
+        setCurrentIndex((prev) => (prev + 1) % Categories.length);
+    };
+
+    // Get 2 visible categories
+    const visibleCategories = [
+        Categories[currentIndex],
+        Categories[(currentIndex + 1) % Categories.length],
+    ];
+
+
+
   return (
 
     <>
@@ -62,7 +87,7 @@ export default function Body() {
 
             <div className='bg-white rounded-[20px]'> <button className='w-full py-2 px-4 font-medium'>Tools and hardware</button> </div>
 
-            <div className='bg-white rounded-[20px]'> <button className='w-full py-2 px-4 font-medium'>Electronics</button> </div>
+            <div className='bg-white rounded-[20px]'> <button className='w-full py-2 px-4 font-medium'>Kitchen Tools</button> </div>
             
             
         </div>
@@ -202,20 +227,6 @@ export default function Body() {
 
                     </div>    
 
-                     
-
-                       
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
                 </div>
             </div>
         </div>
@@ -240,16 +251,11 @@ export default function Body() {
 
         
 
-        <div className='flex ml-[10px] h-[40px] mt-4 '>
+        <div className='flex ml-[10px] h-[40px] mt-4 mr-[10px]'>
 
-            <div className='w-[90px] bg-[#C4C3C3] font-bold text-black py-1 px-1 flex '>
 
-                <h2 className=''>products</h2>
-                <div className='mt-1 ml-1 cursor-pointer'><FaCaretDown/> </div>
-            </div>
-
-            <div className='bg-white flex w-[150px]'>
-                <div className='ml-3 mt-2 text-xl mr-3 cursor-pointer'> <FaSearch/></div>
+            <div className='bg-white flex w-full '>
+                <div className='ml-4 mt-3 text-2xl mr-3 cursor-pointer'> <FaSearch/></div>
                 <input type='text' className='focus:outline-none focus:ring-0 focus:border-transparent'/>
             </div>
             <div className='w-[80px] bg-red-500'> 
@@ -261,13 +267,30 @@ export default function Body() {
 
         <div className='mt-10 flex justify-between py-4 px-1'>
 
-            <div className='text-white font-bold text-4xl cursor-pointer'><FaChevronLeft/> </div>
+               <div className='text-white font-bold text-4xl cursor-pointer'>
+                   <FaChevronLeft onClick={PrevCategory} />
+                </div>
 
-            <div className='bg-[#61979A] rounded-[20px]'> <button className='w-full py-2 px-4 font-medium text-white'>Electronics</button> </div>
+            <div className='flex gap-2 items-center'>
+                {visibleCategories.map((cat, idx) => (
+                    <motion.div
+                        key={cat}
+                        initial={{ opacity: 0, x: idx === 0 ? -50 : 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: idx === 0 ? 50 : -50 }}
+                        transition={{ duration: 0.4 }}
+                        className={`${idx === 0 ? 'bg-[#61979A]' : 'bg-white'} rounded-[20px] px-2 py-2`}
+                    >
+                        <span className={`${idx === 0 ? 'text-white' : 'text-black'} font-medium`}>
+                            {cat}
+                        </span>
+                    </motion.div>
+                ))}
+            </div>
 
-            <div className='bg-white rounded-[20px]'> <button className='w-full py-2 px-4 font-medium'>Electronics</button> </div>
-
-            <div className='text-white font-bold text-4xl cursor-pointer'><FaChevronRight/> </div>
+               <div className='text-white font-bold text-4xl cursor-pointer'>
+                   <FaChevronRight onClick={NextCategory}/> 
+               </div>
 
             
             
@@ -422,4 +445,5 @@ export default function Body() {
 
     </>
   )
+
 }
