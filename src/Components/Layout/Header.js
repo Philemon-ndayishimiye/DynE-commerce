@@ -1,8 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react' 
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
 
+  const Images = [
+    
+      '/electronics/image1.jpg', '/electronics/image3.jpg', '/electronics/image6.jpg'
+        
+  ]
+
+  
+    const  [currentIndex , setCurrentIndex] = useState(0) ;
+
+    const NextImage = ()=>{
+
+     const isLstImage = currentIndex === Images.length-1 ;
+     const NextImage = isLstImage? 0 : currentIndex + 1
+      
+      setCurrentIndex(NextImage);
+
+    }
+
+    
+   
+
+      useEffect(() => {
+         const timeout = setTimeout(() => {
+           NextImage();
+         }, 3000); // 3 seconds
+     
+         // Cleanup timeout if component unmounts or currentIndex updates
+         return () => clearTimeout(timeout);
+         
+          }, [currentIndex]);
+
   return (
+
 
     <>
 
@@ -29,12 +62,35 @@ export default function Header() {
 
       </div>
 
-        <div className='w-[500px] bg-white h-[367px] py-10 absolute top-[60px] rounded-l-[50%] right-0'>
-            <div>
-                <h1> image slider</h1>
+        <div className='w-[500px]  h-[367px] absolute top-[60px] rounded-l-[50%] right-0'>
+
+         
+            
+          {/*  <FaChevronLeft onClick={NextImage} className='absolute top-[45%] left-[10%] text-3xl cursor-pointer'/> */}
+
+            <div className='w-full '>
+
+               <AnimatePresence>
+              <motion.img
+                key={currentIndex}
+                src={Images[currentIndex]}
+                alt="slider"
+                initial={{ opacity: 1, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.8 }}
+                className="absolute w-full  rounded-l-[50%] object-cover "
+              />
+            </AnimatePresence>
+
             </div>
+
+            
+           {/* <FaChevronRight onClick={PrevImage} className='absolute top-[45%] right-[5%] text-3xl cursor-pointer'/> */}
         </div>
     </div>
+
+
 
     {/* visible only on mobile phone */}
 
@@ -59,12 +115,15 @@ export default function Header() {
       </div>
 
       {/*  <div className='w-[130px] bg-white h-[150px] py-10 absolute top-[60px] rounded-l-[50%] right-0'>
+
             <div>
                 <h1> image slider</h1>
             </div>
-        </div>
 
-        */} 
+        </div>
+        */}
+
+       
 
        
    </div>
