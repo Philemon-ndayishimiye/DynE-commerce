@@ -274,19 +274,19 @@ export default function Body() {
             
         </div>
 
-        <div className='mt-6 py-2 '>
+        <div className=' py-2 '>
 
             <div className='mb-[80px]'>
                 <h1 className='text-center font-bold text-3xl text-white '>Electronic Devices</h1>
             </div>
 
-            <div className=' ml-[100px] mr-[100px]'>
+            <div className=' ml-[5%] mr-[2%]'>
 
-                <div className='grid grid-cols-1 gap-y-[50px]'>
+                <div className='grid grid-cols-2 gap-y-[50px] gap-x-7'>
 
-                    <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+                    <div className='flex flex-col  bg-white rounded-lg h-[250px] '>
 
-                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                         <div className='w-[85%] ml-[10px] rounded-md mt-4'>
                               <img  className='rounded-lg w-[300px]' src='/electronics/image1.jpg' alt='image1'/> 
                          </div>
 
@@ -295,8 +295,7 @@ export default function Body() {
                              <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
                          </div>
      
-                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
-                             <div className='px-1 py-1 text-white'>ico</div>
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[11px] mt-5 px-2'>
 
                            <div className=' '> 
                               <button className='px-1 py-1  text-white'>add to cart</button> 
@@ -305,9 +304,9 @@ export default function Body() {
 
                     </div>    
 
-                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+                     <div className='flex flex-col  bg-white rounded-lg h-[250px]'>
 
-                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                         <div className='w-[85%] ml-[10px] rounded-md mt-4'>
                               <img  className='rounded-lg w-[300px]' src='/electronics/image3.jpg' alt='image1'/> 
                          </div>
 
@@ -316,19 +315,19 @@ export default function Body() {
                              <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
                          </div>
      
-                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
-                             <div className='px-1 py-1 text-white'>ico</div>
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[10px] mt-5 px-2'>
+                             
 
                            <div className=' '> 
                               <button className='px-1 py-1  text-white'>add to cart</button> 
                             </div>
                          </div>
 
-                    </div>   
+                    </div>    
 
-                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+                     <div className='flex flex-col  bg-white rounded-lg h-[250px] '>
 
-                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                         <div className='w-[85%] ml-[10px] rounded-md mt-4'>
                               <img  className='rounded-lg w-[300px]' src='/electronics/image6.jpg' alt='image1'/> 
                          </div>
 
@@ -337,19 +336,18 @@ export default function Body() {
                              <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
                          </div>
      
-                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
-                             <div className='px-1 py-1 text-white'>ico</div>
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[11px] mt-5 px-2'>
 
                            <div className=' '> 
                               <button className='px-1 py-1  text-white'>add to cart</button> 
                             </div>
                          </div>
 
-                    </div>  
+                    </div>    
 
-                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+                     <div className='flex flex-col  bg-white rounded-lg h-[250px]'>
 
-                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                         <div className='w-[85%] ml-[10px] rounded-md mt-4'>
                               <img  className='rounded-lg w-[300px]' src='/electronics/image1.jpg' alt='image1'/> 
                          </div>
 
@@ -358,8 +356,28 @@ export default function Body() {
                              <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
                          </div>
      
-                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
-                             <div className='px-1 py-1 text-white'>ico</div>
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[10px] mt-5 px-2'>
+                             
+
+                           <div className=' '> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
+                            </div>
+                         </div>
+
+                    </div> 
+
+                     <div className='flex flex-col  bg-white rounded-lg h-[250px] '>
+
+                         <div className='w-[85%] ml-[10px] rounded-md mt-4'>
+                              <img  className='rounded-lg w-[300px]' src='/electronics/image1.jpg' alt='image1'/> 
+                         </div>
+
+                         <div className='mt-2 ml-[20px] mb-3'>
+                             <h4 className='text-black font-bold'>modern headphone</h4>
+                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
+                         </div>
+     
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[11px] mt-5 px-2'>
 
                            <div className=' '> 
                               <button className='px-1 py-1  text-white'>add to cart</button> 
@@ -368,30 +386,9 @@ export default function Body() {
 
                     </div>    
 
-                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
+                     <div className='flex flex-col  bg-white rounded-lg h-[250px]'>
 
-                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
-                              <img  className='rounded-lg w-[300px]' src='/electronics/image3.jpg' alt='image1'/> 
-                         </div>
-
-                         <div className='mt-2 ml-[20px] mb-3'>
-                             <h4 className='text-black font-bold'>modern headphone</h4>
-                             <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
-                         </div>
-     
-                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[1px]'>
-                             <div className='px-1 py-1 text-white'>ico</div>
-
-                           <div className=' '> 
-                              <button className='px-1 py-1  text-white'>add to cart</button> 
-                            </div>
-                         </div>
-
-                    </div>  
-
-                     <div className='flex flex-col bg-white rounded-lg h-[318px]'>
-
-                         <div className='w-[85%] ml-[12px] rounded-md mt-4'>
+                         <div className='w-[85%] ml-[10px] rounded-md mt-4'>
                               <img  className='rounded-lg w-[300px]' src='/electronics/image6.jpg' alt='image1'/> 
                          </div>
 
@@ -400,32 +397,22 @@ export default function Body() {
                              <h6 className='text-orange-500 font-bold'>$10.02-13.04</h6>
                          </div>
      
-                         <div className='flex bg-orange-500 rounded-[20px] w-[125px] mb-3 ml-[1px]'>
-                             <div className='px-1 py-1 text-white'>ico</div>
+                         <div className='flex bg-orange-500 rounded-[20px] w-[120px] mb-3 ml-[10px] mt-5 px-2'>
+                             
 
                            <div className=' '> 
-                              <button className='px-2 py-1  text-white'>add to cart</button> 
+                              <button className='px-1 py-1  text-white'>add to cart</button> 
                             </div>
                          </div>
 
-                    </div>         
+                    </div>    
+   
+
+
+
+               
 
                        
-
-                     
-
-                       
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
                 </div>
             </div>
         </div>
