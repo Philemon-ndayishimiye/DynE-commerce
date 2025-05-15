@@ -1,25 +1,39 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {
     FaLock,
     FaDollarSign,
     FaBookOpen,
     FaUsers,
+    FaUserTie,
+    FaUser,
+    FaBoxOpen, 
+    FaClipboardList,
+    FaMoneyBillWave,
+    FaChartBar,
+    FaCog,
+    FaTruckMoving ,
+    FaShippingFast
+    
   } from 'react-icons/fa';
 
  function AdmSidbar() {
   return (
+    <>
     <div className='flex'>
 
 
 
-         <div className='bg-blue-950 h-screen w-[300px] flex flex-col text-white text-xl  m-0 p-3'>
-              <h2 className='space-y-11'> Sellers</h2>
-              <h5>Buyers</h5>
-              <h5> Products</h5>
-              <h5> Orders</h5>
-              <h5> Sales</h5>
-              <h5> Report</h5>
-              <h5> Settings</h5>
+         <div className='bg-blue-950 h-screen w-[300px] flex flex-col text-white text-3xl  m-0 p-3 gap-11 '>
+         <div > <Link to="/Seller" className='flex ' >   < FaUserTie/>Seller</Link></div>
+         <div> <Link to="/Buyer" className='flex'> < FaUser/>Buyer</Link></div>
+         <div> <Link to="/Product" className='flex'> <FaBoxOpen/>Product</Link></div>
+         <div> <Link to="/Order" className='flex'> <FaClipboardList/> Order</Link></div>
+         <div><Link to="/Sales" className='flex'> <FaMoneyBillWave/>Sales</Link></div>
+         <div><Link to="/Report" className='flex'>< FaChartBar />Report</Link></div>
+         <div> <Link to="/Settings" className='flex'> < FaCog/>Settings</Link></div>
+
+         <button className='bg-slate-300 h-14 w-28 bottom-6 left-12 absolute text-black'> <Link to="/">Logout</Link></button> 
          </div>
 
 
@@ -29,7 +43,7 @@ import {
               <h1>E-commerce Dashboard</h1>
             </div>
 
-            <div className="bg-gray-100 p-8 flex flex-wrap gap-14">
+            <div className="bg-gray-100 p-8 flex  gap-14 ">
 
               <div className="bg-purple-500 p-4 rounded-lg shadow-md w-56 relative">
                 <h3>Total Sales</h3>
@@ -60,43 +74,146 @@ import {
 
             </div>
             
-            <div className='flex justify-between'>
+            <div className='flex justify-between  mt-48'>
 
                 
-                <div className="bg-green-100 p-10 rounded-lg shadow-md w-80 ">
-
-                           
+                <div className="bg-orange-200 p-10 rounded-lg shadow-md w-1/2 gap-10 ">  
             
-                            <h1 className='underline'> Top Selling Products</h1>
-                            <img src="https://via.placeholder.com/150" alt="Placeholder" className="w-full h-10 object-cover rounded-lg mb-4" />
-
+                            <h1 className='underline text-center' > Top Selling Products</h1>
+                            
 
                             <div className='flex justify-between'>
 
                                  <div>
                                      
-                                 <h3 className='font-bold'>Apple watch</h3>
+                                 <h3 className='font-bold flex h-6'>
+                                   <img src='/electronics/watch1.jpeg' alt='Apple watch' />
+                                   Apple watch
+                                 </h3>
                                  <p>USB,Wireless</p>
-     
+                                
                                 </div> 
      
                                 <div>
-                                 <p className='font-bold'> $200</p> 
+                                 <p className='font-bold '> $200.00</p> 
+                                
                                 </div>  
                             </div>   
+                            
+                            <div className='flex justify-between'>
+
+                                 <div>
+                                     
+                                 <h3 className='font-bold flex h-6'>
+                                   <img src='/electronics/macbook.jpg' alt='Apple watch' />
+                                   Macbook Pro
+                                 </h3>
+                                 <p>USB,Wireless</p>
+                                
+                                </div> 
+     
+                                <div>
+                                 <p className='font-bold '> $1200.00</p> 
+                                
+                                </div>  
+                            </div>  
+                            
+                            <div className='flex justify-between '>
+
+                                 <div>
+                                     
+                                 <h3 className='font-bold flex h-6'>
+                                   <img src='/electronics/fridge1.webp' alt='fridge' />
+                                   Fridge
+                                 </h3>
+                                 <p>USB,Wireless</p>
+                                
+                                </div> 
+     
+                                <div>
+                                 <p className='font-bold '> $900.00</p> 
+                                
+                                </div>  
+                            </div>  
                  </div>   
 
 
-                 <div className="bg-purple-200 p-4 rounded-lg shadow-md w-56 ">
-                      <h1 className='underline'> other Activities</h1>
-                     <h3>Delivered</h3>
-                      <p>invoice</p>
-                      <h1>Dispatch</h1>.
-            
-            
-       
-                 </div> 
+                 <div className="bg-blue-100 p-4 rounded-lg shadow-md w-1/2  ml-40">
+                      <h1 className='underline text-center'> other Activities</h1>
+                      
+                      <div className='flex justify-between'>
 
+                  <div>
+    
+                <h3 className='font-bold flex h-6'>
+                    < FaTruckMoving />
+                     Delivered
+                 </h3>
+                <p>iphone x mobile</p>
+
+                </div> 
+
+             <div>
+              <p className='font-thin '> 25 minutes ago</p> 
+
+               </div>  
+                     </div>  
+                     
+                <div className='flex justify-between'>
+
+                    <div>
+    
+                      <h3 className='font-bold flex '>
+                        
+                         Invoice
+                      </h3>
+                      <p className='font-thin text-[15px]'>Laptop PHP</p>
+
+                    </div> 
+
+                   <div>
+                      <p className='font-light '> 10 hours ago</p> 
+
+                    </div>  
+                </div>  
+                      
+                      
+                <div className='flex justify-between'>
+
+              <div>
+    
+             <h3 className='font-bold flex'>
+                 <FaShippingFast/>
+                 Dispatched
+                </h3>
+               <p>washing machine</p>
+
+                    </div> 
+
+                            <div>
+                            <p className='font-light '> 12 hours ago</p> 
+
+                            </div>  
+                            </div>  
+                            <div className='flex justify-between'>
+
+                                 <div>
+                                     
+                                 <h3 className='font-bold flex h-6'>
+                                  
+                                   Received
+                                 </h3>
+                                 <p>MacAir laptop</p>
+                                
+                                </div> 
+     
+                                <div>
+                                 <p className='font-light '> 10 days ago</p> 
+                                
+                                </div>  
+                            </div>  
+                      
+                 </div> 
              
                  </div>
 
@@ -108,6 +225,7 @@ import {
 
 
     </div>
+    </>
   );
 }
 export default AdmSidbar;
