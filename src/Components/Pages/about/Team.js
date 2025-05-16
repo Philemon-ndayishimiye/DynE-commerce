@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../../Layout/Nav'
 import { FaXTwitter } from "react-icons/fa6";
 import OurStory from './OurStory';
 import Footer from '../../Layout/Footer';
