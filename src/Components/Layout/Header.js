@@ -8,8 +8,7 @@ export default function Header() {
       '/electronics/image1.jpg', '/electronics/image3.jpg', '/electronics/image6.jpg'
         
   ]
-
-  
+ 
     const  [currentIndex , setCurrentIndex] = useState(0) ;
 
     const NextImage = ()=>{
@@ -79,7 +78,7 @@ export default function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.8 }}
-                className="absolute w-full  rounded-l-[50%] object-cover "
+                className="absolute w-full  rounded-l-[50%] object-cover cursor-pointer "
               />
             </AnimatePresence>
 

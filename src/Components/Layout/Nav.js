@@ -30,7 +30,6 @@ export default function Nav() {
             <div className='flex space-x-5 px-8 py-5'>
                 <Link to="/about" className='text-white font-medium text-xs cursor-pointer'>ABOUT</Link>
                 <Link to="contact" className='text-white font-medium text-xs cursor-pointer'>CONTACT US</Link>
-                <Link  className='text-white font-medium text-xs cursor-pointer'>$0.00</Link>
                 <Link  className='text-white font-medium text-xs cursor-pointer'> <div> <FaShoppingCart/> </div>  </Link>
                 <Link to="/login" className='text-white font-medium text-xs cursor-pointer'> <div><FaUserAlt/></div>  </Link>
 

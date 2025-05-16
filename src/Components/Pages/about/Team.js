@@ -3,9 +3,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import OurStory from './OurStory';
 import Footer from '../../Layout/Footer';
 export default function AboutPage() {
+  
   return (
     
     <>
+    <Nav/>
     <OurStory/>
       <div className="p-4">
       <div className="lg:max-w-5xl md:max-w-3xl max-w-xl mx-auto">
