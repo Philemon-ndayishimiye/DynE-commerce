@@ -10,7 +10,15 @@ export default function SellerSidebar() {
 
   return (
 <>
-    <div  className=" hidden md:block flex bg-gray-200">
+<header>
+  <nav className= "w-full bg-yellow-400 shadow-md px-6 py-4 flex justify-between items-right">
+    <div>Dashboard</div>
+    
+    <div><Link>Logout </Link></div>
+
+  </nav>
+</header>
+    <div  className="flex bg-gray-200">
       <div className="bg-[#28345C] text-center w-[300px] h-[500px] ml-5 mt-2 p-5 rounded-lg">
 
         <FaUserAlt className="text-4xl text-white mx-auto" />
@@ -67,7 +75,7 @@ export default function SellerSidebar() {
 
     </div>
 
-    {/* visible only on mobile */}
+    
 
 
 

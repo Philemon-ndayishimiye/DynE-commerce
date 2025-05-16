@@ -1,10 +1,12 @@
 import React from 'react'
 import Footer from '../Layout/Footer'
+import Nav from '../Layout/Nav'
 
 export default function Login() {
   return (
     <>
-    <div className=' min-h-screen flex items-center bg-gray-200'>
+    <Nav/>
+    <div className='min-h-screen flex items-center bg-gray-200'>
       <div className='w-[800px] h-[450px] bg-white shadow-lg flex rounded-lg overflow-hidden'>
         {/* Left panel */}
         <div className='bg-blue-900 w-1/2 text-white p-8 flex flex-col justify-center '>

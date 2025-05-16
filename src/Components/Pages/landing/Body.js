@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { FaSearch, FaCaretDown, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaSearch, FaCaretDown, FaChevronLeft, FaChevronRight, FaSortUp} from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import ProductCard from './ProductCard'
 
 export default function Body() {
+
+  const [productdiv , setProductdiv] = useState(false);
+  
+
     
   const Categories = [
     'Electronic', 'Accessories', 'Home & Living',
@@ -32,21 +37,7 @@ export default function Body() {
     { image: '/electronics/image6.jpg', title: 'Modern Headphone', price: '$10.02-13.04' },
   ];
 
-  const ProductCard = ({ image, title, price, isMobile }) => (
-    <div className={`flex flex-col bg-white rounded-lg ${isMobile ? 'h-[250px]' : 'h-[370px]'}`}>
-      <div className={`w-[85%] mx-auto mt-4`}>
-        <img className='rounded-lg w-full' src={image} alt='product' />
-      </div>
-      <div className='mt-2 ml-[20px] mb-3'>
-        <h4 className='text-black font-bold'>{title}</h4>
-        <h6 className='text-orange-500 font-bold'>{price}</h6>
-      </div>
-      <div className={`flex bg-orange-500 rounded-[20px] ${isMobile ? 'w-[120px] ml-[10px]' : 'w-[170px] ml-[90px]'} mb-3 px-2`}>
-        <button className='px-1 py-1 text-white'>add to cart</button>
-      </div>
-    </div>
-  );
-
+  
   return (
     <>
       {/* Desktop View */}
@@ -60,13 +51,40 @@ export default function Body() {
           <h1>50,000+ <span className='text-xs font-normal'>Avg. monthly visits</span></h1>
         </div>
 
-        <div className='flex ml-10 h-[42px]'>
+        <div  className='flex ml-10 h-[42px] relative'>
           <div className='w-[160px] bg-[#C4C3C3] font-bold text-black py-2 px-2 flex items-center'>
             <span className='ml-5'>products</span>
-            <FaCaretDown className='ml-2' />
+
+            <button onClick={ ()=>setProductdiv(!productdiv)}>
+
+              {productdiv? <FaCaretDown className='ml-2 cursor-pointer'  /> : <FaSortUp className='ml-2 cursor-pointer mt-2'/> }
+            </button>
+
+            
           </div>
+
+          {/* product div */}
+
+          {productdiv &&  (
+             
+            <div className=' absolute top-[105%] w-[160px] bg-white '>
+              
+              <div className=' flex flex-col px-[10%] py-[8%] space-y-5 '>
+
+                <div className='cursor-pointer hover:bg-orange-400 hover:text-white'>Kitchen Tools</div>
+                <div className='cursor-pointer hover:bg-orange-400 hover:text-white'>phones</div>
+                <div className='cursor-pointer hover:bg-orange-400 hover:text-white'>Dresses </div>
+                <div className='cursor-pointer hover:bg-orange-400 hover:text-white'>Kitchen Tools</div>
+                <div className='cursor-pointer hover:bg-orange-400 hover:text-white'>Shoes</div>
+
+              </div>
+
+            </div>
+          )}
+
+
           <div className='bg-white flex w-[800px] items-center'>
-            <FaSearch className='ml-3 text-3xl mr-3 cursor-pointer' />
+            <FaSearch className='ml-3 text-3xl mr-3 cursor-pointer'  />
             <input type='text' className='focus:outline-none w-full' />
           </div>
           <div className='w-[80px] bg-red-500'>
@@ -77,7 +95,7 @@ export default function Body() {
         {/* Static category buttons */}
         <div className='mt-10 flex justify-between py-4 px-5'>
           {Categories.map((cat, i) => (
-            <div key={i} className={`rounded-[20px] ${i === 0 ? 'bg-[#61979A]' : 'bg-white'}`}>
+            <div key={i} className={`rounded-[20px] hover:bg-[#61979A] ${i === 0 ? 'bg-[#61979A]' : 'bg-white'}`}>
               <button className={`w-full py-2 px-4 font-medium ${i === 0 ? 'text-white' : ''}`}>
                 {cat}
               </button>
