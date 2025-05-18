@@ -1,10 +1,14 @@
 import React from 'react'
+import Nav from '../../Layout/Nav'
 import { FaXTwitter } from "react-icons/fa6";
 import OurStory from './OurStory';
+import Footer from '../../Layout/Footer';
 export default function AboutPage() {
+  
   return (
     
     <>
+    <Nav/>
     <OurStory/>
       <div className="p-4">
       <div className="lg:max-w-5xl md:max-w-3xl max-w-xl mx-auto">
@@ -15,7 +19,7 @@ export default function AboutPage() {
 
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 max-md:justify-center max-sm:max-w-xs mx-auto mt-12">
           <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-1.webp" alt="john" className="w-24 h-24 rounded-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-1.webp" alt="john" className="w-full rounded-full object-cover object-top aspect-square" />
 Name
             <div className="p-4">
               <h4 className="text-slate-900 text-[15px] font-semibold">John Doe</h4>
@@ -47,7 +51,7 @@ Name
           </div>
 
           <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-2.webp" className="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-2.webp" className="w-full rounded-full object-cover object-top aspect-square" />
 
             <div className="p-4">
               <h4 className="text-slate-900 text-[15px] font-semibold">Mark Adair</h4>
@@ -81,7 +85,7 @@ Name
           
 
           <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-4.webp" className="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-4.webp" className="w-full rounded-full object-cover object-top aspect-square" />
 
             <div className="p-4">
               <h4 className="text-slate-900 text-[15px] font-semibold">Sophia</h4>
@@ -113,7 +117,7 @@ Name
           </div>
 
           <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <img src="https://readymadeui.com/team-2.webp" className="w-full object-cover object-top aspect-square" />
+            <img src="https://readymadeui.com/team-2.webp" className="w-full rounded-full object-cover object-top aspect-square" />
 
             <div className="p-4">
               <h4 className="text-slate-900 text-[15px] font-semibold">John Doe</h4>
@@ -140,12 +144,14 @@ Name
                       data-original="#0077b5" />
                   </svg>
                 </button>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   
   )
