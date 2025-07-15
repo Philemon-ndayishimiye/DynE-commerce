@@ -36,7 +36,7 @@ export default function OurStory() {
 
             <div className='bg-gray-200 border border-gray-400 rounded-md px-4 py-4 mb-5  text-center font-medium w-[200px] h-[20px] flex items-center justify-center sm:w-[250px] md:w-[300px] lg:w-[400px]'>
               <div className='flex items-center gap-2'>
-                <span><FaCog/></span>Services
+                <span><FaCog/></span>Services we provide
               </div>
             </div>
 
